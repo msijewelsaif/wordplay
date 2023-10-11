@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="word.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Word Scramble Game</h1>
+    <div id="word-container">
+        <div id="word-info">
+            <p>Word : <span id="word-number">1</span></p>
+            <p>Attempts : <span id="attempt-number">0</span></p>
+            <p>Correct  Answers : <span id="correct-answers">0</span></p>
+            <p>Wrong Answers : <span id="wrong-answers">0</span></p>
+        </div>
+        <div id="scrambled-word"></div>
+        <input type="text" id="user-input" placeholder="Your guess" required>
+        <button id="check-button">Check</button>
+      
+       
+    </div>
+    <p id="message"></p>
+    <div class="game-footer">
+        <button id="new-word-button">New Word</button>
+      
+        <div id="score">Score: 0</div>
+        <a href="word.html"><button id="new-word-button">Restart</button></a>
+    </div>
+    
+</div>
+
+
+
+
+
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="incorrect-sound" src="moye.mp3"></audio>
+    <script src="word.js"></script>
+</body>
+</html>

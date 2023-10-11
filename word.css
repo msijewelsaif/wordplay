@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    height: 450px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ff5733; 
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+    background-color: #333;
+}
+
+h1:hover {
+    color: #ffb033; 
+}
+
+#word-container {
+    padding: 25px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-color: #333;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 5px;
+    height: 250px;
+   
+}
+
+#word-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+ 
+}
+
+#word-info p {
+    margin: 0;
+    color: #555;
+    font-weight: bolder;
+}
+
+#word-info span {
+    font-weight: bold;
+    color: red;
+    transition: color 0.5s ease-in-out;
+}
+
+#word-info span:hover {
+    color: rgba(150, 150, 241, 0.556); 
+}
+
+#scrambled-word {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#user-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 95%;
+    margin-top: 10px;
+    
+}
+
+#check-button, #new-word-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff5733; /* Red */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#check-button:hover, #new-word-button:hover {
+    background: black; 
+    color: white; 
+}
+
+#message {
+    font-size: 20x;
+    margin-top: 10px;
+    color: #555;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.game-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    transition: color 0.3s ease-in-out;
+}
+
+
